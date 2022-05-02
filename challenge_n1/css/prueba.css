@@ -1,0 +1,22 @@
+.sec-home {
+  display: flex;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.home-pic1 {
+  width: auto;
+  height: 250px;
+}
+
+.home-pic-div {
+  flex: 1 1 auto;
+  flex-basis: 30%;
+  margin: auto;
+}
+
+.home-text {
+  flex: 1 1 auto;
+  padding: 10px 15px;
+  flex-basis: 30%;
+}
