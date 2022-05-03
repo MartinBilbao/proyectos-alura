@@ -69,9 +69,11 @@
       textoEntrada.value = textoEntrada.value.replace(regex, "ober");
       regex = /u/g;
       textoEntrada.value = textoEntrada.value.replace(regex, "ufat");
-      ocultarMuneco();
+      if(textoEntrada.value!=""){
+        ocultarMuneco();
       textoSalida.value = textoEntrada.value;
       textoEntrada.value = "";
+      }
     }
 
     function desencriptar() {
@@ -85,9 +87,11 @@
       textoEntrada.value = textoEntrada.value.replace(regex, "o");
       regex = /ufat/g;
       textoEntrada.value = textoEntrada.value.replace(regex, "u");
-      ocultarMuneco();
+      if(textoEntrada.value!=""){
+        ocultarMuneco();
       textoSalida.value = textoEntrada.value;
       textoEntrada.value = "";
+      }
     }
 
     function copiar() {
